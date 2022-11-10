@@ -36,6 +36,7 @@ body {
   width: 100vw;
   overflow: hidden;
   position: fixed;
+  background-color: white;
 }
 
 .header-left {
@@ -47,6 +48,10 @@ body {
 
 .website-title {
   width: 55vw;
+}
+
+.website-title:hover {
+  cursor: pointer;
 }
 
 .menu-bar {
@@ -132,6 +137,7 @@ body {
   grid-template-areas:
     "header"
     "projects-content";
+  overflow: hidden;
 }
 
 .projects-container {
@@ -203,13 +209,13 @@ body {
 }
 
 .project-7 {
-  margin-top: 1rem;
+  margin-top: 25rem;
   border-top: none;
   margin-left: -100vw;
 }
 
 .project-8 {
-  margin-top: 30rem;
+  margin-top: 20rem;
   border-top: none;
   margin-left: -100vw;
 }
@@ -226,6 +232,16 @@ body {
 
 .contact-body {
   background-color: rgb(13, 13, 13);
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: row;
+  height: 15vw;
+  /* border: solid 1px red; */
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
 }
 
 .background {
@@ -264,7 +280,7 @@ body {
   text-decoration: none;
   color: white;
   margin-left: 3vw;
-  margin-top: 15vw;
+  margin-top: 10vw;
   width: 40vw;
   height: 3vw;
 }
@@ -280,7 +296,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 3vw;
-  margin-top: -7vw;
+  margin-top: -12vw;
   width: 7vw;
 }
 
@@ -302,11 +318,11 @@ body {
   display: flex;
   grid-area: e-mail;
   margin-right: 3vw;
-  margin-top: 5vw;
+  margin-top: 10vw;
 }
 
 .spotify-player-frame {
-  width: 40vw;
+  width: 37vw;
   height: 40vw;
   /* box-shadow: 10px 10px 1px 10px grey; */
 }
@@ -314,4 +330,104 @@ body {
 .mail-text-container {
   display: flex;
   justify-content: space-between;
+}
+
+.about-container {
+  display: flex;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 6vw;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.about-text {
+  margin-top: 30vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 33vw 2vw 65vw;
+  grid-template-areas: "left . right";
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.project-body-right {
+  grid-area: right;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.project-body-left {
+  grid-area: left;
+  z-index: 0;
+  position: fixed;
+  padding-right: 2vw;
+}
+
+.junya-images {
+  max-width: 67vw;
+  padding-left: 1vw;
+}
+
+.project-description {
+  max-width: 33vw;
+  display: flex;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.project-title {
+  display: flex;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2.5vw;
+  color: black;
+  max-width: 33vw;
+  padding-left: 1vw;
+  margin-bottom: 0;
+}
+
+.website-title-project {
+  max-width: 32vw;
+  padding: 1vw;
+}
+
+.menu-bar-project {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+.project-menu-text {
+  font-size: 2.5vw;
+  line-height: 2vw;
+  max-width: 7vw;
+}
+
+.project-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vw;
+}
+
+.pdf-link {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #dc572b;
 }
